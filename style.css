@@ -1,39 +1,9 @@
 body {
 	margin: 0;
 	padding:0;
-	font-family: 'Open Sans', sans-serif;
+    font-family: 'Catamaran', sans-serif;
     background-color:black;
 }
-
-#main {
-    width: 100%;
-	height: 600px;
-	background-repeat:no-repeat;
-	background-size:cover;
-	background-position:center center;
-	text-align: center;
-	color:white;
-}
-
-	#text-background {
-		background-color:#000;
-		opacity:0.8;
-		padding: 10px;
-		margin:50px auto 0 auto;
-		width: 40%;
-	}
-
-	#main h2 {
-		font-size:50px;
-		font-weight:200;
-		margin:10px;
-	}
-
-	#main h3 {
-		font-size:20px;
-		font-weight:200;
-		margin:10px;
-	}
 
 
 #nav {
@@ -42,11 +12,12 @@ body {
 	margin: 0px 0px 0px 0px;
 	padding:25px 0;
 	text-align:center;
+    background-color:rgba(7,16,40,0.75);
 	transition: background-color 1s;
 }
 
 	#nav:hover {
-		background-color:rgba(0,0,0,0.8);
+		background-color:rgba(7,16,40,1);
 	}
 
 	#nav ul {
@@ -63,7 +34,7 @@ body {
 
 	#nav li a {
 		text-transform: uppercase;
-		color:white;
+		color:#bc995c;
 		opacity: 0.7;
 		font-weight: 700;
 		letter-spacing: 4px;
@@ -72,29 +43,6 @@ body {
 
 	#nav li a:hover {
 		opacity:1;
-	}
-
-#faq {
-    background-image: url('raw/inside1.jpg');
-    width: 100%;
-	height: 400px;
-	background-repeat:no-repeat;
-	background-size:cover;
-	background-position:center center;
-	text-align: center;
-	color:white;
-}
-
-	#faq h2 {
-		font-size:50px;
-		font-weight:200;
-		margin:10px;
-	}
-
-	#faq h3 {
-		font-size:20px;
-		font-weight:200;
-		margin:10px;
 	}
 
 #fsection {
@@ -131,6 +79,40 @@ body {
 #text-background a {
     color: #b5880f; 
 }
+
+video-countdown {
+	text-align:center;
+	width:35%;
+	display:inline-block;
+	float:left;
+	margin:70px 0 0 100px;
+	padding:125px 10px;
+	border: 1px solid darkgray;
+	border-radius:5px;
+}
+
+	#video-countdown h2, h4 {
+		margin:0;
+	}
+
+	#video-countdown h2 {
+		text-transform:uppercase;
+		font-size:14px;
+		color:#555;
+	}
+
+
+	#countdown {
+		font-size:95px;
+		font-weight:100;
+		color:white;
+	}
+
+    #countdown a {
+        color: #b5880f;
+        text-decoration: none;
+    }
+
 
 /*
 #ria {

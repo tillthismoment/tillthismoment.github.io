@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width"/>
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <title>Lynbrook Senior Prom</title>
+        <link href="format.css" rel="stylesheet" />
+        <link href="style.css" rel="stylesheet" />
+
+
+        <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,400,600,700" rel="stylesheet">
+
+        <script type="text/javascript" src="jquery.min.js"></script>
+
+    </head>
+    <body>
+        <div class ="main" >
+            <div id="nav">
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="guide.html">prom guide</a></li>
+                        <li><a href="bids.html">bids</a></li>
+                        <li><a href="timeline.html">timeline</a></li>
+                        <li><a href="video.html">video</a></li>
+
+                        <li><a href="faq.html">faq</a></li>
+                    </ul>
+                </div>
+        
+            <div id="text-background video-pic">
+                <h2>VIDEO DROP</h2>
+                <h3>Come back for the senior prom video drop on April 30th at 8pm.</h3>
+            </div>
+        </div>
+        
+        <div id="next-section" style="background-color:black !important;">
+            <div id="container" >
+                
+                <div id="countdown"></div>
+                
+            </div>
+        </div>
+        
+                <script type="text/javascript">
+
+        // * COUNTDOWN TIMER START * //
+            // set the date we're counting down to
+            var target_date = new Date("Apr 30, 2017").getTime();
+
+            // variables for time units
+            var days, hours, minutes, seconds;
+
+            // get tag element
+            var countdown = document.getElementById("countdown");
+            
+            var buffer = 2;
+
+            // update the tag with id "countdown" every 1 second
+            setInterval(function () {
+
+                // find the amount of "seconds" between now and target
+                var current_date = new Date().getTime();
+                var seconds_left = (target_date - current_date) / 1000;
+
+                // do some time calculations
+                days = parseInt(seconds_left / 86400);
+                seconds_left = seconds_left % 86400;
+
+                hours = parseInt(seconds_left / 3600);
+                seconds_left = seconds_left % 3600;
+
+                minutes = parseInt(seconds_left / 60);
+                seconds = parseInt(seconds_left % 60);
+
+                // format countdown string + set tag value
+                countdown.innerHTML = days + "d " + (hours - buffer) + "h "
+                + minutes + "m " + seconds + "s ";
+
+            }, 1000);
+                    
+        </script>
+            
+        
+
+    </body>
+</html>
