@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width"/>
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <title>Lynbrook JProm</title>
+        <link href="venue.css" rel="stylesheet" />
+        <link href="style.css" rel="stylesheet" />
+
+
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="jquery.min.js"></script>
+
+    </head>
+    <body>
+        <div id="main">
+            <div id="nav">
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="venue.html">venue</a></li>
+                    <li><a href="prepare.html">prepare</a></li>
+                    <li><a href="activities.html">activities</a></li>
+                    <li><a href="https://calendar.google.com/calendar/embed?src=cnim9p07rt1ipvot1ngb71710g%40group.calendar.google.com&ctz=America/Los_Angeles" target="_blank">timeline</a></li>
+                    
+                    <li><a href="faq.html">faq</a></li>
+                </ul>
+            </div>
+            <div id="text-background">
+                <h2>Coyote Creek Venue</h2>
+                <h3>1 Coyote Creek Golf Dr, Morgan Hill, CA 95037</h3>
+            </div>
+        </div>
+        
+        <div id="next-section">
+            <div id="photos">
+                <ul id="photo-gallery">
+                    <li>
+                        <img src="raw/DSC_0188-min.jpg">
+                    </li>
+                    <li>
+                        <img src="raw/front-light-min.jpg">
+                    </li>
+                    <li>
+                        <img src="raw/DSC_0212-min.jpg">
+                    </li>
+                                        <li>
+                        <img src="raw/DSC00570-min.JPG">
+                    </li>
+                    <li>
+                        <img src="raw/outside1.jpg">
+                    </li>
+                    <li>
+                        <img src="raw/DSC00558-min.JPG">
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+        
+        <script type="text/javascript">
+        
+        var $overlay = $('<div id="overlay"></div>');
+var $image = $("<img>");
+
+//An image to overlay
+$overlay.append($image);
+
+//Add overlay
+$("body").append($overlay);
+
+  //click the image and a scaled version of the full size image will appear
+  $("#photo-gallery img").click( function(event) {
+    event.preventDefault();
+    var imageLocation = $(this).attr("src");
+
+    //update overlay with the image linked in the link
+    $image.attr("src", imageLocation);
+
+    //show the overlay
+    $overlay.show();
+  } );
+
+  $("#overlay").click(function() {
+    $( "#overlay" ).hide();
+  });
+
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,151 @@
+body {
+	margin: 0;
+	padding:0;
+	font-family: 'Open Sans', sans-serif;
+    background-color:black;
+}
+
+#main {
+    width: 100%;
+	height: 600px;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center center;
+	text-align: center;
+	color:white;
+}
+
+	#text-background {
+		background-color:#000;
+		opacity:0.8;
+		padding: 10px;
+		margin:50px auto 0 auto;
+		width: 40%;
+	}
+
+	#main h2 {
+		font-size:50px;
+		font-weight:200;
+		margin:10px;
+	}
+
+	#main h3 {
+		font-size:20px;
+		font-weight:200;
+		margin:10px;
+	}
+
+
+#nav {
+	width: 100%;
+	display: inline-block;
+	margin: 0px 0px 0px 0px;
+	padding:25px 0;
+	text-align:center;
+	transition: background-color 1s;
+}
+
+	#nav:hover {
+		background-color:rgba(0,0,0,0.8);
+	}
+
+	#nav ul {
+		list-style: none;
+		display:inline-block;
+		margin:0;
+        padding: 0;
+	}
+
+	#nav ul li {
+		display: inline;
+		margin: 0 40px;
+	}
+
+	#nav li a {
+		text-transform: uppercase;
+		color:white;
+		opacity: 0.7;
+		font-weight: 700;
+		letter-spacing: 4px;
+		text-decoration: none;
+	}
+
+	#nav li a:hover {
+		opacity:1;
+	}
+
+#faq {
+    background-image: url('raw/inside1.jpg');
+    width: 100%;
+	height: 400px;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center center;
+	text-align: center;
+	color:white;
+}
+
+	#faq h2 {
+		font-size:50px;
+		font-weight:200;
+		margin:10px;
+	}
+
+	#faq h3 {
+		font-size:20px;
+		font-weight:200;
+		margin:10px;
+	}
+
+#fsection {
+    background-color:black;
+    width: 100%;
+    height: 2000px;
+    margin: 0 auto;
+}
+
+#question {
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    color:white;
+}
+
+#question h1 {
+    font-size: 25px;
+    font-weight: 200;
+
+}
+
+#question p {
+    font-size: 14px;
+    font-weight: 200;
+
+}
+
+#question a {
+    color: #b5880f;  
+}
+
+#text-background a {
+    color: #b5880f; 
+}
+
+/*
+#ria {
+    opacity:0;
+    transition: opacity 1s;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 95%;
+    left: 95%;
+}
+
+#ria:hover {
+    opacity:1;
+}
+*/
+
+
