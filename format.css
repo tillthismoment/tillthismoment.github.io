@@ -144,7 +144,6 @@
         opacity: 1;
         color: #bc995c;
         background-color: #222;
-
     }
 
     .section h1, p
@@ -222,6 +221,11 @@
         margin: 0 auto;
     }
     
+    .section a
+    {
+        margin: 5px;
+    }
+    
     .third {
         width: 70%;
         display:block;
@@ -260,6 +264,7 @@
     #text-background
     {
         margin-bottom: 20px;
+        width: 70%;
     }
 }
 
