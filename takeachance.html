@@ -106,6 +106,10 @@ body.audio-2 .words div.words-2 {
 body.audio-3 .words div.words-3 {
   opacity: 1;
 }
+            
+body.audio-4 .words div.words-4 {
+  opacity: 1;
+}
 .words div p {
   color: white;
   position: absolute;
@@ -480,7 +484,7 @@ function App() {
   // setup images wrapped in a promise
   function setupImages() {
     return new Promise(function(resolve, reject) {
-      var count  = 4,
+      var count  = 5,
           di     = A.img_di,
           loaded = 0;
       for(var i = 1; i <= count; i++) {
@@ -513,15 +517,22 @@ function App() {
   function setupAudios() {
     var lyrics = [
       "Neh neh neh neh neeeeeeeeh...neh neh neh neh neeeeeh.",
-      "‘member sittin’ in class the first time listening to Dilla. Everything’s good.",
-      "Ahh! Ahh! Ahh! Ahh! Ahh! Ahh! Ahh! Ahh! Ahh! Ahh! Ahh! Ahh! Ahh!"
+      "‘member sittin’ in class the first time listening to Dilla. Everything’s good.", "Ahh! Ahh! Ahh! Ahh! Ahh! Ahh! Ahh! Ahh! Ahh! Ahh! Ahh! Ahh! Ahh!",
+      "408 mafia thinking that they're 2 for 2, but lyrically sounding like they're 0 for 2"
     ];
     return new Promise(function(resolve, reject) {
-      var count  = 3,
+      var count  = 4,
           loaded = 0;
         // do a thing, possibly async, then…
       for(var i = 1; i <= count; i++) {
-        var url = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/111863/chano-0" + i + ".mp3";
+        if(i != 4)
+            {
+                var url = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/111863/chano-0" + i + ".mp3";
+            }
+          else{
+              var url = "http://adhiv.com/diss2.mp3"
+          }
+          
         var audio = new Audio(url);
         var words = document.querySelector(".words");
         var el = document.createElement("div");
@@ -597,7 +608,7 @@ function App() {
       A.audio++;
       document.body.className = "";
       A.audio_playing = false;    
-      if(A.audio > 3) A.audio = 1;
+      if(A.audio > 4) A.audio = 1;
     }
   }
   
