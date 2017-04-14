@@ -114,6 +114,14 @@ video-countdown {
     }
 
 
+
+@media (max-width: 780px) {
+	#nav ul li {
+		display: block;
+		margin: 10px 40px;
+	}
+
+}
 /*
 #ria {
     opacity:0;

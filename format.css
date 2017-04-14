@@ -33,7 +33,7 @@
 	}
 
 #guide-pic {
-    background-image: url('raw/gold1.jpg');
+    background-image: url('raw/goldhome2.jpg');
 }
 
 #video-pic
@@ -69,7 +69,7 @@
     border-radius: 5px;
     margin-bottom: 10px;
     float: top;
-    padding: 2px;
+    padding: 2px 0;
 }
 
     .box h1 {
@@ -91,6 +91,26 @@
         width: 125px;
     }
 
+    .box a
+    {
+        text-decoration: none;
+        color: #bc995c;
+        padding: 10px;
+        background-color: white;
+        margin: 0 3px 10px 3px;   
+        border-radius: 5px;
+        font-weight: 700;
+        display: inline-block;
+        border: 3px solid white;
+            -webkit-transition: .3s all;
+            transition: .3s all;
+    }
+
+    .box a:hover
+    {
+        border: 3px solid #bc995c;
+    }
+
 @media (max-width: 1000px) {
     #section {
         height: auto;
@@ -98,6 +118,18 @@
     
     .third {
         width: 70%;
+    }
+    
+    .main
+    {
+        display:block;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    
+    #text-background
+    {
+        margin-bottom: 20px;
     }
 }
 
