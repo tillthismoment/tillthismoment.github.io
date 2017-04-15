@@ -146,6 +146,16 @@
         background-color: #222;
     }
 
+.section h1
+{
+    margin: 5px;
+}
+
+#special:hover
+{
+    background-color: #e3e3e3;
+}
+
     .section h1, p
     {
         margin: 5px 0px;
