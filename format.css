@@ -14,7 +14,7 @@
 
 #veryspecial
 {
-    height: 245px;
+    height: 245px !important;
 }
 
 .main {
