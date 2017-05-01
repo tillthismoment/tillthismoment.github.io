@@ -12,6 +12,11 @@
     text-decoration: underline;
 }
 
+#veryspecial
+{
+    height: 245px;
+}
+
 .main {
     width: 100%;
 	height: 350px;
@@ -233,6 +238,12 @@
 }
 
 @media (max-width: 1000px) {
+    
+    #veryspecial
+{
+    height: 400px;
+}
+    
     #section {
         height: auto;
     }
